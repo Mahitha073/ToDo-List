@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="list.js"></script>
+
+	<title>To Do List</title>
+	<style>
+		#div2
+		{
+			background-color: wheat;
+			width: 35vmax;
+			height: 10vmax;
+			margin-left: 65vmin;
+			margin-top: 10vmin;
+			padding-top: 2vmin;
+			border-radius: 7pt;
+			border: 1px solid brown;
+			position: absolute;
+		}
+		#div1
+		{
+			/* background-color: rgb(235, 233, 223); */
+			width: 30vmax;
+			height: 35vmax;
+			margin-left: 8%;
+			margin-top: 0.01%;
+			border-radius: 3pt;
+			position: absolute;
+		}
+		#p1
+		{
+			font-size: 30pt;
+			font-weight: 900;
+			font-family: Cosmic sans MS;
+			text-align: center;
+			background-color: rgb(208, 151, 77);
+			border-radius: 25px;
+			/* width: 80%; */
+			/* margin-left: 10%; */
+			/* margin-top: 1vmin; */
+
+		}
+		#h3
+		{
+			background-color: rgb(208, 151, 77);
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="div2">
+		<div id="div1">
+			<p id="p1">ToDo List</p>
+			<div class="container mt-3">
+				<!-- <h3
+					style="color: rgb(164, 93, 0); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-size: 32px;">
+					Add Items</h3> -->
+		
+				<label id="lblsuccess" class="text-success" style="display: contents; color: brown;">
+				</label>
+		
+				<form id="addForm">
+					<div class="row">
+						<div class="col-lg-7 col-md-7 col-sm-7">
+		
+							<input style="border-color:rgb(164, 93, 0);background-color: rgb(253, 239, 220); width: 200pt;" type="text"
+								onkeyup="toggleButton(this, 'submit')" class="form-control" id="item">
+						</div>
+		
+						<div class="col-lg-5 col-md-5 col-sm-5">
+							<input style="background-color: antiquewhite; color: brown; border-color: brown;" type="submit"
+								class="btn btn-dark" id="submit" value="Submit" disabled>
+						</div>
+					</div>
+				</form>
+				<br>
+				<h3 id="h3"style="font-size: 32px;color:antiquewhite" class="mt-4">Tasks</h3>
+		
+				<form id="addForm">
+					<ul id="items" style="background-color: antiquewhite; color: rgb(164, 93, 0);border-radius: 25px;"></ul>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
