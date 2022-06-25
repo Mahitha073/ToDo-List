@@ -56,7 +56,7 @@ function addItem(e) {
 	editButton.className =
 			"btn-success btn btn-sm float-right edit";
 
-	editButton.appendChild(document.createTextNode("Pencil"));
+	editButton.appendChild(document.createTextNode("Edit"));
 
 	li.appendChild(document.createTextNode(newItem));
 	li.appendChild(deleteButton);
